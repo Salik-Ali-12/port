@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./style.css">
+    <!-- google-icons -->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <!-- font awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css
+    ">
+    <!-- google font -->
+    <link
+        href="https://fonts.googleapis.com/css2?family=Black+Ops+One&family=El+Messiri&family=Roboto:wght@300;400;700&family=Rosario:wght@300&family=Varela+Round&display=swap"
+        rel="stylesheet">
+</head>
+
+<body>
+
+    <div class="container">
+        <div class="card" id="card">
+            <div id="mode">
+                <i id="dark_mode_icon" onclick="darkMode()" onmouseover="modeText()" onmouseout="removeText()"
+                    class="fa-solid fa-moon"></i>
+                <i id="light_mode" onclick="lightMode()" onmouseover="lightModeText()" onmouseout="lightRemoveText()"
+                    class="fa-solid fa-sun"></i>
+                <span id="mode_text"></span>
+
+            </div>
+
+            <div class="content">
+
+                <img id="profile-img" src="./images/pic1.jfif" onmouseover="src='./images/pic2.jfif';"
+                    onmouseout="src='./images/pic1.jfif';">
+
+                <div id="temp">
+                    <h2 id="name">Owais Ahmed</h2>
+                    <img id="ring-img" src="./images/half-ring.png" alt="">
+                </div>
+                <span id="span">Web Developer</span>
+
+                <p id="intro">Hi, I’m Owais, a MERN Stack and DevOps Architect with certification in most cutting-edge technologies of development and deployment of tools, apps, and microservices who loves building education products.</p>
+                <p id="mail">o.owaisak23@gmail.com</p>
+
+ 
+                <div class="icons">
+                    <a href="https://github.com/Owaisk23" target="_blank"> <i
+                            onmouseover="document.getElementById('github-span').style.visibility='visible'"
+                            onmouseout="document.getElementById('github-span').style.visibility='hidden'"
+                            id="github-icon" class="icon_dark_mode fa-brands fa-github"></i>
+                        <span id="github-span" class="icons-span">GitHub</span>
+                    </a>
+                    <a href="https://www.instagram.com/o.owaisk/" target="_blank"> <i
+                            onmouseover="document.getElementById('instagram-span').style.visibility='visible'"
+                            onmouseout="document.getElementById('instagram-span').style.visibility='hidden'"
+                            class="icon_dark_mode fa-brands fa-instagram"></i>
+                        <span id="instagram-span" class="icons-span">Instagram</span>
+                    </a>
+                    <a href="https://www.facebook.com/o.owaisk/" target="_blank"> <i
+                            onmouseover="document.getElementById('facebook-span').style.visibility='visible'"
+                            onmouseout="document.getElementById('facebook-span').style.visibility='hidden'"
+                            class="icon_dark_mode fa-brands fa-facebook"></i>
+                        <span id="facebook-span" class="icons-span">Facebook</span>
+                    </a>
+                    <a href="https://www.linkedin.com/in/owais-ahmed-khan-7597081a9/" target="_blank"> <i
+                            onmouseover="document.getElementById('linkedin-span').style.visibility='visible'"
+                            onmouseout="document.getElementById('linkedin-span').style.visibility='hidden'"
+                            class="icon_dark_mode fa-brands fa-linkedin-in"></i>
+                        <span id="linkedin-span" class="icons-span">LinkedIn</span>
+                    </a>
+                    <a href="#" target="_blank"> <i
+                            onmouseover="document.getElementById('whatsapp-span').style.visibility='visible'"
+                            onmouseout="document.getElementById('whatsapp-span').style.visibility='hidden'"
+                            class="icon_dark_mode fa-brands fa-whatsapp"></i>
+                        <span id="whatsapp-span" class="icons-span">WhatsApp</span>
+                    </a>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+
+    <script src="./app.js"></script>
+</body>
+
+</html>
